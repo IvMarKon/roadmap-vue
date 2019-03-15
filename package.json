@@ -1,20 +1,52 @@
 {
-  "name": "vue-test-utils-getting-started",
+  "name": "roadmap-vue",
   "version": "1.0.0",
+  "description": "Vue training project for roadmap",
+  "main": "index.js",
   "dependencies": {
     "vue": "^2.4.4"
   },
   "devDependencies": {
     "@vue/test-utils": "^1.0.0-beta.13",
     "babel-jest": "^21.2.0",
-    "babel-preset-env": "^1.6.0",
+    "babel-preset-env": "^1.7.0",
     "jest": "^21.2.1",
     "regenerator-runtime": "^0.11.0",
-    "vue-template-compiler": "^2.4.4"
+    "vue-template-compiler": "^2.4.4",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@vue/babel-preset-app": "^3.5.1",
+    "axios": "^0.18.0",
+    "babel-loader": "^8.0.4",
+    "css-loader": "^2.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jest-serializer-vue": "^2.0.2",
+    "jest-transform-stub": "^2.0.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "vue-jest": "^3.0.4",
+    "vue-loader": "^15.4.2",
+    "webpack": "^4.28.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "vue"
+    ],
+    "transform": {
+      "^.+\\.js$": "./node_modules/babel-jest",
+      ".*\\.(vue)$": "vue-jest"
+    }
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest --watchAll",
+    "dev": "webpack-dev-server --mode development --progress --hot --open",
+    "build": "webpack --mode production --progress"
   },
-  "author": "Evan You",
+  "author": "Ivan Markov",
   "license": "MIT"
 }
