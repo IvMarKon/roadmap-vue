@@ -1,4 +1,4 @@
-# Getting started with `vue-test-utils`
+# Vue roadmap testing
 
 ## Setup
 
@@ -7,7 +7,42 @@ npm install
 npm test
 ```
 
-## Resources
+## Tests
 
-- [vue-test-utils docs](https://vue-test-utils.vuejs.org)
-- [vue-test-utils repo](https://github.com/vuejs/vue-test-utils)
+### `Crypto` component
+
+* Render test
+* Current amount appears
+* Tabs widget works
+* Buy component appears
+* Sell component appears
+* Footer appears
+* Axios works
+
+### `Header` component
+
+* Render test
+* All points appears
+* User can click points
+
+### `Clock` component
+
+* Render test
+* Time appears correctly
+
+### `Buy` component
+
+* Render test
+* User can input values into inputs
+* User can submit with button
+
+### `Sell` component
+
+* Render test
+* User can input values into inputs
+* User can submit with button
+
+### `History` component
+
+* Render test
+* New transaction appears correctly
