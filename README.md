@@ -13,6 +13,7 @@ npm test
 
 * Render test               |✔️|
 * Current amount appears    |✔️|
+* Tabs widget works         |✔️|
 * Buy component appears     |✔️|
 * Sell component appears    |✔️|
 * History component appears |✔️|
@@ -23,7 +24,6 @@ npm test
 
 * Render test
 * All points appears
-* Tabs widget works
 * User can click points
 
 ### `Clock` component
