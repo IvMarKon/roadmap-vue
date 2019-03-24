@@ -11,18 +11,19 @@ npm test
 
 ### `Crypto` component
 
-* Render test
-* Current amount appears
-* Tabs widget works
-* Buy component appears
-* Sell component appears
-* Footer appears
+* Render test               |✔️|
+* Current amount appears    |✔️|
+* Buy component appears     |✔️|
+* Sell component appears    |✔️|
+* History component appears |✔️|
+* Footer appears            |✔️|
 * Axios works
 
 ### `Header` component
 
 * Render test
 * All points appears
+* Tabs widget works
 * User can click points
 
 ### `Clock` component

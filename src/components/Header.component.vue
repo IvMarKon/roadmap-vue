@@ -5,13 +5,13 @@
         <span>CTrade</span>
       </div>
       <ul class="hnav">
-        <li class="dash">
+        <li class="sell">
           <a v-on:click.prevent="triggerChangeTab('sell')" href="#">Sell</a>
         </li>
-        <li class="settings">
+        <li class="buy">
           <a v-on:click.prevent="triggerChangeTab('buy')" href="#">Buy</a>
         </li>
-        <li class="admin">
+        <li class="history">
           <a v-on:click.prevent="triggerChangeTab('history')" href="#">History</a>
         </li>
         <div class="clear"></div>

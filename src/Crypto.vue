@@ -22,7 +22,7 @@
     </div>
 
     <div class="cwrapper alt">
-      <div class="content">
+      <div class="content widgets">
         <keep-alive>
           <component
             :is="tab"

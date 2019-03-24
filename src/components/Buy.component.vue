@@ -1,5 +1,5 @@
 <template>
-  <div class="cbox fleft">
+  <div class="cbox fleft buy-component">
     <h3>Sell BTC for LTC</h3>
     <p>Sell Bitcoins for Litecoins.</p>
     <p></p>

@@ -1,5 +1,5 @@
 <template>
-  <div class="cbox" style="margin-bottom:20px;">
+  <div class="cbox history-component" style="margin-bottom:20px;">
     <h3>History</h3>
     <p>View history of your transactions.</p>
     <p></p>
