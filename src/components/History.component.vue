@@ -36,23 +36,6 @@ export default {
   },
   props: {
     transactions: Array
-  },
-  data() {
-    return {
-      currentDate: new Date()
-    };
-  },
-  methods: {
-    getMinutesAgo: function(date) {
-      return setInterval(function() {
-        let result = this.currentDate - date;
-        if (result / 60000 > 1) {
-          return `${Math.round(result / 60000)} Minutes ago`;
-        } else {
-          return `${Math.round(result / 1000)} Seconds ago`;
-        }
-      }, 1000);
-    }
   }
 };
 </script>

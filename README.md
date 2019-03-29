@@ -22,14 +22,13 @@ npm test
 
 ### `Header` component
 
-* Render test
-* All points appears
-* User can click points
+* Render test               |✔️|
+* All points appears        |✔️|
 
 ### `Clock` component
 
-* Render test
-* Time appears correctly
+* Render test               |✔️|
+* Time appears correctly    |✔️|
 
 ### `Buy` component
 
