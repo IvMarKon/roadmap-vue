@@ -3,15 +3,15 @@
     <h3>Sell BTC for LTC</h3>
     <p>Sell Bitcoins for Litecoins.</p>
     <p></p>
-    <div class="flist">
+    <div class="flist value">
       <p>BTC Amount:</p>
       <input type="text" :class="{error: errors.amountOverflow}" v-model="btcToLtc" placeholder="0">
     </div>
-    <div class="flist">
+    <div class="flist rate">
       <p>Rate:</p>
       <input disabled type="text" :value="ltcRate | addLtcSign" placeholder="$ 0.01">
     </div>
-    <div class="flist">
+    <div class="flist submit">
       <p>&nbsp;</p>
       <button v-on:click="this.triggerBuyTransaction" class="button blue">Sell BTC</button>
     </div>
@@ -69,7 +69,9 @@ export default {
   },
   watch: {
     btcToLtc: function(btc) {
+      console.log(btc, this.ltcPrice);
       if (btc <= this.bitcoinAmount) {
+        console.log(btc, this.bitcoinAmount);
         this.errors.amountOverflow = false;
         this.ltcRate =
           Math.round((Math.round(btc * this.btcPrice) / this.ltcPrice) * 100) /

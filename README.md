@@ -32,14 +32,15 @@ npm test
 
 ### `Buy` component
 
-* Render test
-* User can input values into inputs
-* User can submit with button
+* Render test               |✔️|
+* User can input values into inputs |✔️|
+* Result value appears in real time |✔️|
+* User can submit with button |✔️|
 
 ### `Sell` component
 
 * Render test
-* User can input values into inputs
+* Result value appears in real time
 * User can submit with button
 
 ### `History` component
