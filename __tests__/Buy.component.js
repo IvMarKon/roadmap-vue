@@ -11,7 +11,7 @@ describe("Buy.vue", () => {
     }
   });
 
-  it("should be rendered Buy", () => {
+  it("component rendered", () => {
     expect(Buy).toBeTruthy();
   });
 
@@ -19,15 +19,15 @@ describe("Buy.vue", () => {
   input.element.value = 1000;
   input.trigger("input");
 
-  it("user able to input value", () => {
+  it("input field updates", () => {
     expect(wrapper.vm.btcToLtc).toBe("1000");
   });
 
-  it("should show result in real time", () => {
+  it("convert result updates", () => {
     expect(wrapper.vm.ltcRate > 0).toBe(true);
   });
 
-  it("should trigger submit with correct values", () => {
+  it("trigger submits with correct values", () => {
     let button = wrapper.find(".submit button");
     button.trigger("click");
     expect(wrapper.emitted().buyTransaction[0][0].btc).toBe(1000);

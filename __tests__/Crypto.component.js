@@ -4,37 +4,37 @@ import Crypto from '../src/Crypto'
 describe('Crypto.vue', () => {
   const wrapper = mount(Crypto)
 
-  it('should be rendered Crypto', () => {
+  it('component rendered', () => {
     expect(Crypto).toBeTruthy();
   })
 
-  it('should contain current currency amount', () => {
+  it('contains current currency amount', () => {
     const currencies = wrapper.findAll('.amount .highlight');
     expect(currencies.length).toBe(3);
   })
 
-  it('should contain Sell component', () => {
+  it('contains Sell component', () => {
     wrapper.find('.header .sell a').trigger('click');
     wrapper.vm.$nextTick(() => {
         expect(wrapper.find(".widgets .sell-component").exists()).toBe(true);
       });
   });
 
-  it('should contain Buy component', () => {
+  it('contains Buy component', () => {
     wrapper.find('.header .buy a').trigger('click');
     wrapper.vm.$nextTick(() => {
         expect(wrapper.find(".widgets .buy-component").exists()).toBe(true);
       });
   });
 
-  it('should contain History component', () => {
+  it('contains History component', () => {
     wrapper.find('.header .history a').trigger('click');
     wrapper.vm.$nextTick(() => {
         expect(wrapper.find(".widgets .history-component").exists()).toBe(true);
       });
   });
 
-  it('should contain Footer component', () => {
+  it('contains Footer component', () => {
     expect(wrapper.find('.footer').element).toBeTruthy();
   });
 })

@@ -6,11 +6,11 @@ describe("Clock.component.vue", () => {
   wrapper.setProps({ start: new Date() });
   wrapper.setData({ timeString: "3 Minutes ago" });
 
-  it("should be rendered Clock", () => {
+  it("component rendered", () => {
     expect(Clock).toBeTruthy();
   });
 
-  it("should contain <span /> and correct time", () => {
+  it("contains <span /> and correct time", () => {
     expect(wrapper.find("span").exists()).toBe(true);
     expect(wrapper.text()).toBe("3 Minutes ago");
   });
