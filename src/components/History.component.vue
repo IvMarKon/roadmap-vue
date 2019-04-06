@@ -3,8 +3,8 @@
     <h3>History</h3>
     <p>View history of your transactions.</p>
     <p></p>
-    <div class="ultable">
-      <ul class="lister lheader">
+    <div class="ultable transactions">
+      <ul class="lister lheader transactions__header-row">
         <li>Time</li>
         <li>Type</li>
         <li>Litecoins</li>
@@ -12,7 +12,7 @@
         <li>Dollars</li>
       </ul>
       <template v-for="(transaction, index) in transactions">
-        <ul :key="'transaction' + index" class="lister">
+        <ul :key="'transaction' + index" class="lister transactions__body-row">
           <li>
             <clock-component :start="transaction.time"></clock-component>
           </li>

@@ -3,15 +3,15 @@
     <h3>Sell LTC for BTC</h3>
     <p>Sell Litecoins for Bitcoins.</p>
     <p></p>
-    <div class="flist">
+    <div class="flist value">
       <p>LTC Amount:</p>
       <input type="text" :class="{error: errors.amountOverflow}" v-model="ltcToBtc" placeholder="0">
     </div>
-    <div class="flist">
+    <div class="flist rate">
       <p>Rate:</p>
       <input disabled type="text" :value="btcRate | addBtcSign" placeholder="$ 0.01">
     </div>
-    <div class="flist">
+    <div class="flist submit">
       <p>&nbsp;</p>
       <button v-on:click="this.triggerSellTransaction" class="button blue">Sell LTC</button>
     </div>
