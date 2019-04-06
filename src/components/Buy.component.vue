@@ -69,9 +69,7 @@ export default {
   },
   watch: {
     btcToLtc: function(btc) {
-      console.log(btc, this.ltcPrice);
       if (btc <= this.bitcoinAmount) {
-        console.log(btc, this.bitcoinAmount);
         this.errors.amountOverflow = false;
         this.ltcRate =
           Math.round((Math.round(btc * this.btcPrice) / this.ltcPrice) * 100) /
